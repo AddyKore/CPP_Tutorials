@@ -23,3 +23,13 @@ line
 comment */
 
 ---------------------------------------------------
+
+namespace
+
+Namespaces are used to make different entities with same name like first::x and sexond::x are 2 different variables from two different namespaces
+
+if you dont want to constantly write first::x second::x then you can just simply do "using namespace first" and this should automatically start using that namespace unless you hae a new local variable with same identifier. you can always do second::x to use second name space
+
+using namespace std; is done to avoid usinnd std:: before string, cout, cin and many oother things
+
+---------------------------------------------------
