@@ -31,5 +31,22 @@ Namespaces are used to make different entities with same name like first::x and 
 if you dont want to constantly write first::x second::x then you can just simply do "using namespace first" and this should automatically start using that namespace unless you hae a new local variable with same identifier. you can always do second::x to use second name space
 
 using namespace std; is done to avoid usinnd std:: before string, cout, cin and many oother things
+this is not a great idea to use coz it bring in may elements that are named with some common names like data and that might break the program
 
+
+---------------------------------------------------
+
+typedef
+
+this is a tool used to make alias for exsting datatypes that you do not want to write over and over again; like std::string can become str
+
+typedef std::string str_t;
+
+_t is used to indicate its a datatype
+
+you can also use "using"
+
+using str = std::string;
+
+using is helpfull when templates come into play( discussed later)
 ---------------------------------------------------
