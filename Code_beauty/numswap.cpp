@@ -23,6 +23,13 @@ int main()
     cout << "after reset"; 
     cout << " a = " << a << "  and  b = " << b << endl;
 
+    a += b;
+    b = a-b;
+    a -= b;
+
+    cout << "after no extra variable swap"; 
+    cout << " a = " << a << "  and  b = " << b << endl;
+
 
 
 }
