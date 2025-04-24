@@ -17,6 +17,15 @@ void print_list(Node* nodeLL)
     }
     cout << ": end : "<< endl;
 }
+
+void print_list_reverse(Node* nodeLL)
+{
+    while(nodeLL != NULL){        
+        cout << "Node value : " << nodeLL->value << endl; 
+        nodeLL = nodeLL->privious;
+    }
+    cout << ": end : "<< endl;
+}
 int main()
 {
 
@@ -58,11 +67,7 @@ int main()
 
 
 
-  
-    
-
-
-
-
     print_list(head);
+    print_list_reverse(tail);
+
 }
